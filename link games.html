@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>قائمة الألعاب - Free</title>
+<style>
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #eee;
+    margin: 0;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: flex-start;
+  }
+  .marquee-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #111;
+    overflow: hidden;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 188, 212, 0.6);
+    z-index: 1000;
+  }
+  .marquee-text {
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #00bcd4;
+    animation: marquee 12s linear infinite;
+    padding-left: 100%;
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .container {
+    background-color: #1e1e1e;
+    padding: 25px 40px;
+    border-radius: 10px;
+    width: 320px;
+    box-shadow: 0 0 15px #00bcd4;
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #00bcd4;
+  }
+  .game-link {
+    background: #333;
+    margin-bottom: 18px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #eee;
+    display: block;
+    font-size: 18px;
+    transition: background 0.3s ease;
+  }
+  .game-link:hover {
+    background: #00bcd4;
+    color: #121212;
+  }
+</style>
+</head>
+<body>
+  <div class="marquee-container">
+    <div class="marquee-text">Site by Nextro</div>
+  </div>
+  <div class="container">
+    <h1>قائمة ألعاب  للحاسوب مجانا</h1>
+    <a href="https://www.mediafire.com/file/cu0l04c3wwbeir3/Need_For_Speed_Most_Wanted_Win_Setup_EN.zip/file" target="_blank" class="game-link">
+      Need For Speed 2005
+    </a>
+    <a href="https://csdownload.net/" target="_blank" class="game-link">
+      Counter Strike 1.6
+    </a>
+    <a href="https://datanodes.to/download" target="_blank" class="game-link">
+      GTA 4 Free
+    </a>
+  </div>
+</body>
+</html>
